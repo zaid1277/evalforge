@@ -1,0 +1,31 @@
+# --- Environment secrets ---
+# Any .env variant (.env, .env.local, .env.production, ...) except the
+# checked-in .env.example templates, which must never contain real values.
+.env
+.env.local
+.env.*
+!.env.example
+
+# --- Python (api/) ---
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.coverage
+htmlcov/
+
+# --- Node / Next.js (web/) ---
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+npm-debug.log*
+coverage/
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
